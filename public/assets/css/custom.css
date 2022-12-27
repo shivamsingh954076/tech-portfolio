@@ -1,0 +1,283 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f0f3;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3vw;
+  padding: 72px 8vw;
+  color: #040109;
+}
+
+.footer .h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.footer .brand .h5 {
+  display: flex;
+  text-transform: uppercase;
+  gap: 16px;
+}
+
+.footer>div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer .brand {
+  max-width: 200px;
+  gap: 24px;
+  line-height: 1.5;
+}
+
+.newsletter {
+  position: relative;
+}
+
+.newsletter input {
+  font-size: 16px;
+  font-weight: 400;
+  height: 53px;
+  padding: 6px 6px 6px 16px;
+  background: transparent;
+  border: 1px solid #05010b;
+  color: #08040e;
+  outline: none;
+  border-radius: 14px;
+  font-size: 16px;
+  width: 370px;
+}
+
+.newsletter button {
+  position: absolute;
+  padding: 16px 40px;
+  height: 53px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f2c855;
+  font-size: 16px;
+  font-weight: 500;
+  color: #e9e6f1;
+  /* fgh */
+  right: 6px;
+  top: 6px;
+  transition: all 0.5s;
+}
+
+.newsletter button:hover {
+  cursor: pointer;
+  border-radius: 70px 10px 70px 10px;
+  box-shadow: -10px 0px #050405;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.social .social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.21);
+  border-radius: 20% 20% 20% 20%;
+}
+
+.social a {
+  transition: all 0.3s ease;
+}
+
+.social a:hover {
+  box-shadow: 0px 0px 20px 1px #726193;
+  transform: scale(1.1);
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 32px 8vw;
+  background-color: #f2c855;
+}
+
+.copyright a {
+  color: #0a001a;
+  margin: 0 1vw 0 1vw;
+}
+
+.copyright a:last-child {
+  margin-right: 0;
+}
+
+.copyright a::before {
+  background-color: #0a001a !important;
+}
+
+p,
+a {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a {
+  color: #040206;
+  text-decoration: none;
+}
+
+footer a {
+  position: relative;
+}
+
+footer a:not(.social-icon)::before {
+  background-color: #09060e;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-radius: 4px;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+footer a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+@media (max-width: 960px) {
+  .footer {
+    gap: 72px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .footer .brand {
+    max-width: 400px !important;
+  }
+
+  .subscribe {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .subscribe .newsletter {
+    width: 100%;
+    max-width: 370px;
+  }
+
+  .subscribe .newsletter input {
+    width: calc(100% - 22px);
+  }
+
+  .copyright {
+    padding: 32px 5vw;
+  }
+
+  .copyright p,
+  .copyright a {
+    font-size: 14px;
+  }
+
+  .footer {
+    padding: 72px 8vw;
+  }
+}
+
+@media (max-width: 360px) {
+
+  p,
+  a {
+    font-size: 14px;
+  }
+
+  .footer .h5 {
+    font-size: 16px;
+  }
+}
+
+
+/*  button  */
+.contact-button {
+  /* position: absolute; */
+  background: linear-gradient(90deg, #EF8431 0%, #E71A86 100%);
+  transform: rotate(-0.31deg);
+}
+
+
+
+/* <navbar/> */
+.navbar {
+  background-image: url('/assets/images/nav.png');
+
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.nav-section {
+  background-image: url('/assets/images/circle.png');
+
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.nav-heading {
+
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 87px;
+
+  /* main */
+
+  background: linear-gradient(90deg, #EF8431 0%, #E71A86 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+}
+
+
+.counter-heading {
+  background-image: url('/assets/images/WHAT WE DO.png');
+
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.footer-section {
+  background-image: url('/assets/images/footer.png');
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+
+.counter-testmonials {
+  background-image: url('/assets/images/TESTIMONAILS.png');
+
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
